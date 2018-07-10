@@ -1,0 +1,62 @@
+/*! CSS Used from: file:///Users/Nick/Downloads/Build%20(from%20David)/assets/stylesheets/style.css */
+table{border-collapse:collapse;border-spacing:0;}
+td,th{padding:0;}
+@media print{
+*,*:before,*:after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;}
+thead{display:table-header-group;}
+tr{page-break-inside:avoid;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+table{background-color:transparent;}
+th{text-align:left;}
+.table-condensed > thead > tr > th,.table-condensed > tbody > tr > td,.table-condensed > tfoot > tr > th{padding:5px;}
+/*! CSS Used from: file:///Users/Nick/Downloads/Build%20(from%20David)/assets/metronic/dist/html/default/assets/vendors/base/vendors.bundle.css */
+.datepicker{border-radius:4px;direction:ltr;}
+.datepicker-inline{width:220px;}
+.datepicker table{margin:0;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.datepicker table tr td,.datepicker table tr th{text-align:center;width:30px;height:30px;border-radius:4px;border:none;}
+.datepicker table tr td.new,.datepicker table tr td.old{color:#777;}
+.datepicker table tr td.day:hover{background:#eee;cursor:pointer;}
+.datepicker table tr td.active{color:#fff;background-color:#337ab7;border-color:#2e6da4;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
+.datepicker table tr td.active:focus{color:#fff;background-color:#286090;border-color:#122b40;}
+.datepicker table tr td.active:hover{color:#fff;background-color:#286090;border-color:#204d74;}
+.datepicker table tr td.active.active,.datepicker table tr td.active:active{color:#fff;background-color:#286090;border-color:#204d74;}
+.datepicker table tr td.active.active:focus,.datepicker table tr td.active.active:hover,.datepicker table tr td.active:active:focus,.datepicker table tr td.active:active:hover{color:#fff;background-color:#204d74;border-color:#122b40;}
+.datepicker table tr td span{display:block;width:23%;height:54px;line-height:54px;float:left;margin:1%;cursor:pointer;border-radius:4px;}
+.datepicker table tr td span.focused,.datepicker table tr td span:hover{background:#eee;}
+.datepicker table tr td span.active,.datepicker table tr td span.active:hover{color:#fff;background-color:#337ab7;border-color:#2e6da4;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);}
+.datepicker table tr td span.active:focus,.datepicker table tr td span.active:hover:focus{color:#fff;background-color:#286090;border-color:#122b40;}
+.datepicker table tr td span.active:hover,.datepicker table tr td span.active:hover:hover{color:#fff;background-color:#286090;border-color:#204d74;}
+.datepicker table tr td span.active.active,.datepicker table tr td span.active:active,.datepicker table tr td span.active:hover.active,.datepicker table tr td span.active:hover:active{color:#fff;background-color:#286090;border-color:#204d74;}
+.datepicker table tr td span.active.active:focus,.datepicker table tr td span.active.active:hover,.datepicker table tr td span.active:active:focus,.datepicker table tr td span.active:active:hover,.datepicker table tr td span.active:hover.active:focus,.datepicker table tr td span.active:hover.active:hover,.datepicker table tr td span.active:hover:active:focus,.datepicker table tr td span.active:hover:active:hover{color:#fff;background-color:#204d74;border-color:#122b40;}
+.datepicker table tr td span.new,.datepicker table tr td span.old{color:#777;}
+.datepicker .datepicker-switch{width:145px;}
+.datepicker .datepicker-switch,.datepicker .next,.datepicker .prev,.datepicker tfoot tr th{cursor:pointer;}
+.datepicker .datepicker-switch:hover,.datepicker .next:hover,.datepicker .prev:hover,.datepicker tfoot tr th:hover{background:#eee;}
+/*! CSS Used from: file:///Users/Nick/Downloads/Build%20(from%20David)/assets/metronic/dist/html/default/assets/demo/default/base/style.bundle.css */
+*,*::before,*::after{box-sizing:border-box;}
+table{border-collapse:collapse;}
+th{text-align:inherit;}
+@media print{
+*,*::before,*::after{text-shadow:none!important;box-shadow:none!important;}
+thead{display:table-header-group;}
+tr{page-break-inside:avoid;}
+}
+.datepicker{width:265px;padding:10px;}
+.datepicker table{width:100%;}
+.datepicker td,.datepicker th{width:35px;height:35px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;}
+.datepicker thead th.prev,.datepicker thead th.datepicker-switch,.datepicker thead th.next{font-weight:500;}
+.datepicker thead th.dow{font-weight:500;}
+.datepicker tfoot tr > th.today,.datepicker tfoot tr > th.clear{-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;font-weight:500;}
+.datepicker thead th.prev:hover,.datepicker thead th.datepicker-switch:hover,.datepicker thead th.next:hover{background:#ebedf2;}
+.datepicker tbody tr > td.day{color:#575962;}
+.datepicker tbody tr > td.day:hover{background:#ebedf2;}
+.datepicker tbody tr > td.day.old{color:#7b7e8a;}
+.datepicker tbody tr > td.day.new{color:#575962;}
+.datepicker tbody tr > td.day.active,.datepicker tbody tr > td.day.active:hover{background:#5867dd;color:#ffffff;}
+.datepicker tbody tr > td span.month{color:#575962;}
+.datepicker tbody tr > td span.month.focused,.datepicker tbody tr > td span.month:hover{background:#ebedf2;}
+.datepicker tbody tr > td span.month.active:hover,.datepicker tbody tr > td span.month.active{background:#5867dd;color:#ffffff;}
+.datepicker tfoot tr > th.today:hover,.datepicker tfoot tr > th.clear:hover{background:#ebedf2;}
+.datepicker.datepicker-inline{border:1px solid #f4f5f8;}
