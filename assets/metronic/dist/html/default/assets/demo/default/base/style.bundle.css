@@ -39,6 +39,8 @@ $table-inverse-color:           $body-bg !default;
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -88,6 +90,7 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+/*hgconnect
 body {
   margin: 0;
   font-family: "Poppins";
@@ -97,6 +100,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff; }
+hgconnect*/
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -485,6 +489,7 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
+/*hgconnect
 .container {
   width: 100%;
   padding-right: 15px;
@@ -516,6 +521,7 @@ pre {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+hgconnect*/
 
 .no-gutters {
   margin-right: 0;
@@ -2624,6 +2630,7 @@ tbody.collapse.show {
     border-left: 1px solid #ced4da;
     border-radius: 0 0.25rem 0.25rem 0; }
 
+/* hgconnect
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -2976,6 +2983,7 @@ tbody.collapse.show {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+
 .card {
   position: relative;
   display: flex;
@@ -3143,6 +3151,8 @@ tbody.collapse.show {
     .card-columns .card {
       display: inline-block;
       width: 100%; } }
+
+hgconnect*/
 
 .breadcrumb {
   display: flex;
@@ -7501,6 +7511,8 @@ lg: 992px,
 xl: 1200px
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/*hgconnect
 html {
   font-family: sans-serif;
   text-size-adjust: 100%;
@@ -7528,7 +7540,7 @@ body {
 body {
   display: flex;
   flex-direction: column; }
-
+hgconnect*/
 router-outlet {
   display: none; }
 
@@ -8862,6 +8874,8 @@ b, strong {
     -o-transform: rotate(-13deg);
     transform: rotate(-13deg); } }
 
+/*hgconnect
+
 .m-container {
   width: 100%;
   margin-right: auto;
@@ -8928,6 +8942,7 @@ b, strong {
 @media (min-width: 1600px) {
   .m-container.m-container--responsive.m-container--xxxl {
     width: 1540px; } }
+*/
 
 .m-stack {
   display: block;
@@ -12239,7 +12254,7 @@ code {
   background: #ebedf2; }
 
 .btn {
-  font-family: "Poppins";
+/*hgconnect  font-family: "Poppins"; hgconnect*/
   -webkit-box-shadow: none !important ;
   -moz-box-shadow: none !important ;
   box-shadow: none !important ;
@@ -12280,7 +12295,7 @@ code {
     padding: 0.75rem 2rem;
     font-size: 1rem;
     font-weight: 400;
-    font-family: Poppins; }
+/*hgconnect    font-family: Poppins; } hgconnect*/
     .btn.m-btn--custom.btn-sm, .btn-group-sm > .btn.m-btn--custom {
       padding: 0.5rem 1rem;
       font-size: 0.9rem; }
