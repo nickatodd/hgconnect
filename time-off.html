@@ -13,13 +13,10 @@
 
     <title>HG Connect Main Screen</title>
 
+    <!--     Metronic  -->
 
-
-    <!-- Metronic  -->
     <link rel='stylesheet' href='assets/metronic/dist/html/default/assets/vendors/base/vendors.bundle.css'>
     <link rel='stylesheet' href='assets/metronic/dist/html/default/assets/demo/default/base/style.bundle.css'>
-
-    <!-- Original CSS -->
     <link rel='stylesheet' href='assets/stylesheets/style.css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +24,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 
 </head>
 
@@ -90,8 +86,8 @@
                     <!-- Put your content here, in cards -->
 
 
-                    <!-- Styled Metronis Components -->
-                    <div class="card">
+                    <!-- Styled Metronic Components -->
+                    <div class="card m-section">
                         <!-- Back Link -->
                         <a href="index.html" class="back-link">Back</a>
 
@@ -99,35 +95,45 @@
 
                         <form class="metronics-form" type="get" action="#">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2018</button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-                                    <a class="dropdown-item" href="#" data-toggle="m-tooltip" title="" data-placement="right" data-skin="dark" data-container="body" data-original-title="Tooltip title">2018</a>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">2018</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start">
+                                    <a class="dropdown-item" href="#">2018</a>
                                     <a class="dropdown-item" href="#">2017</a>
-                                    <a class="dropdown-item" href="#" data-toggle="m-tooltip" title="" data-placement="left" data-original-title="Tooltip title">2016</a>
+                                    <a class="dropdown-item" href="#">2016</a>
                                 </div>
-                            </div>
-
-                            <div class="form-group m-form__group row">
-                                <label class="col-form-label col-lg-3 col-sm-12">Vacation days</label>
-                                <div class="col-lg-4 col-md-9 col-sm-12">
-                                    [ chart ]
-                                </div>
-                                <!--<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>-->
-                            </div>
-                            <div class="form-group m-form__group row">
-                                <label class="col-form-label col-lg-3 col-sm-12">Personal days</label>
-                                <div class="col-lg-4 col-md-9 col-sm-12">
-                                    [ chart ]
-                                </div>
-                                <!--<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>-->
-                            </div>
-                            <div>
-                                <button onclick="window.location.href='request.html'" type="button" class="btn btn-primary">
-					              <img src="assets/img/icons/time.svg" alt="">Request Time Off
-					                </button>
-                                <!--end::Form-->
                             </div>
                         </form>
+
+                        <!--end::Form-->
+                        
+                        <div class="m-section">
+                            <div class="m-stack m-stack--ver m-stack--general">
+                                <div class="m-stack__item m-stack__item--middle" style="width:150px">
+                                    <div>Vacation days</div>
+                                    <span class="m-section__sub">You have 3 left</span>
+                                </div>
+                                <div class="m-stack__item m-stack__item--middle">
+                                    <div class="circle" id="circles-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-section">
+                        <div class="m-stack m-stack--ver m-stack--general">
+                            <div class="m-stack__item m-stack__item--middle" style="width:150px">
+                                    <div>Personal days</div>
+                                    <span class="m-section__sub">You have 1 left</span>
+                                </div>
+                            <div class="m-stack__item m-stack__item--middle">
+                                <div class="circle" id="circles-2"></div>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+                        <button onclick="window.location.href='request.html'" type="button" class="btn btn-primary">
+                            <img src="assets/img/icons/time.svg" alt="">Request Time Off
+					    </button>
                     </div>
                 </div>
             </div>
@@ -141,12 +147,11 @@
     <script src='assets/js/bootstrap.js'></script>
     <script src='assets/js/offcanvas.js'></script>
 
+
     <!--Metronic Theme-->
+
     <script src='assets/metronic/dist/html/default/assets/vendors/base/vendors.bundle.js'></script>
     <script src='assets/metronic/dist/html/default/assets/demo/default/base/scripts.bundle.js'></script>
-    <script src="assets/metronic/dist/html/default/assets/demo/default/custom/components/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="assets/metronic/dist/html/default/assets/demo/default/custom/components/forms/widgets/bootstrap-timepicker.js" type="text/javascript"></script>
-
 
     <script type="text/javascript">
         $('.current').each(function() {
@@ -155,17 +160,48 @@
         });
     </script>
 
-    <script type="text/javascript">
-        $('#datepicker').datepicker({
-            multidate: true,
-            clearBtn: true
+
+    <script src="assets/js/circles.js"></script>
+    <script>
+        
+        
+        
+        var vacationDaysUsed = 7;
+        var vacationDaysAvailable = 10;
+        var personalDaysUsed = 1;
+        var personalDaysAvailable = 2;
+
+
+        Circles.create({
+            id: 'circles-1',
+            radius: 60,
+            value: vacationDaysUsed,
+            maxValue: vacationDaysAvailable,
+            width: 4,
+            text: vacationDaysUsed + ' /' + vacationDaysAvailable + " used",
+            colors: ['#eee', '#00CBFF'],
+            duration: 400,
+            wrpClass: 'circles-wrp',
+            textClass: 'circles-text',
+            styleWrapper: true,
+            styleText: true
         });
-        $('#timepicker_start').timepicker();
-        $('#timepicker_end').timepicker();
+
+        Circles.create({
+            id: 'circles-2',
+            radius: 60,
+            value: personalDaysUsed,
+            maxValue: personalDaysAvailable,
+            width: 4,
+            text: personalDaysUsed + ' /' + personalDaysAvailable + " used",
+            colors: ['#eee', '#00CBFF'],
+            duration: 400,
+            wrpClass: 'circles-wrp',
+            textClass: 'circles-text',
+            styleWrapper: true,
+            styleText: true
+        });
     </script>
-
-
-
 
 </body>
 

@@ -337,7 +337,7 @@ th {
   content: "\e017"; }
 
 .glyphicon-signal:before {
-  content: "\e018"; }
+    content: "\e018"; }
 
 .glyphicon-cog:before {
   content: "\e019"; }
@@ -6272,3 +6272,11 @@ p.results {
   button {
     min-width: 100%;
     margin-top: 10px; } }
+
+
+/* Nick */
+.datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
+    color: #fff;
+    background-color: dodgerblue !important;
+    border-color: none !important;
+}
