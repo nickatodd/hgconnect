@@ -60,7 +60,7 @@
                         <ul class="sidenav-list">
                             <li><a href="index.html"><img src="assets/img/icons/home.svg" alt="">Home</a></li>
                             <li class="active"><a href="time-off.html"><img src="assets/img/icons/time.svg" alt="">Time off</a></li>
-                            <li><a href="myaccount.html"><img src="assets/img/icons/myaccount.svg" alt="">My account</a></li>
+                            <li class="active"><a href="myaccount.html"><img src="assets/img/icons/myaccount.svg" alt="">My account</a></li>
                             <li><a href="#"><img src="assets/img/icons/signout.svg" alt="">Sign out</a></li>
                         </ul>
                     </div>
@@ -75,8 +75,8 @@
         <h3>Welcome,<br>Steve!</h3>
         <ul class="sidenav-list">
             <li><a href="index.html"><img src="assets/img/icons/home.svg" alt="">Home</a></li>
-            <li class="active"><a href="time-off.html"><img src="assets/img/icons/time.svg" alt="">Time off</a></li>
-            <li><a href="myaccount.html"><img src="assets/img/icons/myaccount.svg" alt="">My account</a></li>
+            <li><a href="time-off.html"><img src="assets/img/icons/time.svg" alt="">Time off</a></li>
+            <li class="active"><a href="myaccount.html"><img src="assets/img/icons/myaccount.svg" alt="">My account</a></li>
             <li><a href="#"><img src="assets/img/icons/signout.svg" alt="">Sign out</a></li>
         </ul>
     </div>
@@ -91,53 +91,50 @@
                     <div class="card">
                         <!-- Back Link -->
                         <a href="time-off.html" class="back-link">Back</a>
-
+                        <h1>My account</h1>
 
 
                         <!--begin::Form-->
 
                         <form class="metronics-form" type="get" action="#">
-                            <div class="form-group m-form__group row">
-                                <!-- Select Input -->
-                                <select class="form-control">
-						          <option>Personal Emergency Leave</option>
-						          <option>Vacation</option>
-                                        </select>
-                            </div>
-
-
-                            <!-- Datepicker -->
-                            <div class="form-group m-form__group row">
-                                <label for="datepicker">Select Each Day</label>
-                            </div>
-                            <div class="form-group m-form__group row">
-                                <div id="datepicker"></div>
-                            </div>
-                            <!-- Checkbox -->
-
-                            <div class="form-group m-form__group row">
-                                <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="">
-                                <label for="styled-checkbox-1">Partial day? <em>(for single days only)</em></label>
-                            </div>
-
-
-
-                            <div class="form-group m-form__group row">
-                                <label class="col-form-label col-lg-3 col-sm-12">Start time</label>
-                                <div class="col-lg-4 col-md-9 col-sm-12">
-                                    <input id="timepicker_start" type="text">
+                            
+                            <div class="m-section">
+                                <!-- Email address -->   
+                                <div class="form-group m-form__group">
+                                    <label for="Email">Email address</label>
+                                    <input type="email" class="form-control m-input" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
                                 </div>
-                                <!--<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>-->
-                            </div>
-                            <div class="form-group m-form__group row">
-                                <label class="col-form-label col-lg-3 col-sm-12">End time</label>
-                                <div class="col-lg-4 col-md-9 col-sm-12">
-                                    <input id="timepicker_end" type="text">
+
+                                <!-- Home phone -->   
+                                <div class="form-group m-form__group">
+                                    <label for="phone_home">Home phone</label>
+                                    <input type="tel" class="form-control m-input" id="phone_home" placeholder="Enter phone number">
                                 </div>
-                                <!--<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>-->
+
+                                <!-- Mobile phone -->   
+                                <div class="form-group m-form__group">
+                                    <label for="phone_mobile">Mobile phone</label>
+                                    <input type="tel" class="form-control m-input" id="phone_mobile" placeholder="Enter phone number">
+                                </div>
+
+                                <!-- Emergency contact name -->   
+                                <div class="form-group m-form__group">
+                                    <label for="emergency_contact_name">Emergency contact name</label>
+                                    <input type="tel" class="form-control m-input" id="emergency_contact_name" placeholder="Enter name">
+                                </div>
+
+                                <!-- Emergency contact phone number -->   
+                                <div class="form-group m-form__group">
+                                    <label for="phone_emergency_contact">Emergency contact phone number</label>
+                                    <input type="tel" class="form-control m-input" id="phone_emergency_contact" placeholder="Enter phone number">
+                                </div>
                             </div>
-                            <div class="form-group m-form__group row">
-                                <button type="submit" class="btn btn-primary">Next →</button>
+                            
+                            <div class="m-section">
+                                <!-- Submit button -->
+                                <div class="form-group m-form__group">
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </div>
                             </div>
                         </form>
                         <!--end::Form-->
